@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividades Sem Apostila</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Atividades Sem Apostila</h1>
+  
+    <div class="grupo">
+      <h2>Operações Matemáticas</h2>
+      <div class="btn-container">
+        <button onclick="carregarScript('soma.js')">Soma</button>
+        <button onclick="carregarScript('subtracao.js')">Subtração</button>
+        <button onclick="carregarScript('multiplicacao.js')">Multiplicação</button>
+        <button onclick="carregarScript('divisao.js')">Divisão</button>
+      </div>
+    </div>
+  
+    <div class="grupo">
+      <h2>Sequência Numérica</h2>
+      <div class="btn-container">
+        <button onclick="carregarScript('antecessor.js')">Antecessor</button>
+        <button onclick="carregarScript('sucessor.js')">Sucessor</button>
+      </div>
+    </div>
+  
+    <div class="grupo">
+      <h2>Formas Geométricas</h2>
+      <div class="btn-container">
+        <button onclick="carregarScript('circulo.js')">Círculo</button>
+        <button onclick="carregarScript('quadrado.js')">Quadrado</button>
+        <button onclick="carregarScript('retangulo.js')">Retângulo</button>
+        <button onclick="carregarScript('losango.js')">Losango</button>
+        <button onclick="carregarScript('trapezio.js')">Trapézio</button>
+        <button onclick="carregarScript('triangulo.js')">Triângulo</button>
+        <button onclick="carregarScript('hexagono.js')">Hexágono</button>
+      </div>
+    </div>
+  
+    <div class="grupo">
+      <h2>Exercícios WhatsApp</h2>
+      <div class="btn-container">
+        <button onclick="carregarScript('exerciciowhatsapp1.js')">Exercício WhatsApp 1</button>
+        <button onclick="carregarScript('exerciciowhatsapp2.js')">Exercício WhatsApp 2</button>
+        <button onclick="carregarScript('exerciciowhatsapp3.js')">Exercício WhatsApp 3</button>
+        <button onclick="carregarScript('exerciciowhatsapp4.js')">Exercício WhatsApp 4</button>
+        <button onclick="carregarScript('exerciciowhatsapp5.js')">Exercício WhatsApp 5</button>
+        <button onclick="carregarScript('exerciciowhatsapp6.js')">Exercício WhatsApp 6</button>
+        <button onclick="carregarScript('exerciciowhatsapp7.js')">Exercício WhatsApp 7</button>
+        <button onclick="carregarScript('exerciciowhatsapp8.js')">Exercício WhatsApp 8</button>
+        <button onclick="carregarScript('exerciciowhatsapp9.js')">Exercício WhatsApp 9</button>
+        <button onclick="carregarScript('exerciciowhatsapp10.js')">Exercício WhatsApp 10</button>
+      </div>
+    </div>
+  
+    <script>
+      function carregarScript(nomeArquivo) {
+        const script = document.createElement('script');
+        script.src = `javascript/${nomeArquivo}`;
+        script.type = 'text/javascript';
+        document.body.appendChild(script);
+      }
+    </script>
+  
+  </body>
+  </html>
+  
